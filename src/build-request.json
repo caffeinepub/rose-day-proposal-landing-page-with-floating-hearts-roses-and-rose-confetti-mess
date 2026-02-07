@@ -1,0 +1,61 @@
+{
+  "kind": "build_request",
+  "title": "Update floating roses and hearts background animation",
+  "priority": "normal",
+  "requirements": [
+    {
+      "id": "REQ-7",
+      "text": "Update the floating background animation so that both roses and hearts are always present concurrently in the background (not just randomly one or the other), while keeping the effect subtle and behind all hero content.",
+      "target": "frontend",
+      "source": {
+        "messageIds": [
+          "msg-12",
+          "msg-14"
+        ],
+        "quotes": [
+          "I want floating roses and hearts both in backgrond.",
+          "update and create"
+        ]
+      },
+      "acceptanceCriteria": [
+        "On load, the background includes visible heart particles and visible rose particles at the same time.",
+        "The animation remains layered behind the page content (hero text, buttons, overlays) and does not obscure readability.",
+        "The animation remains non-interactive (does not block clicking or scrolling)."
+      ]
+    },
+    {
+      "id": "REQ-8",
+      "text": "Expose and apply simple tuning controls for the background particles (e.g., total count and per-type distribution) and increase density moderately so the updated roses+hearts background is clearly noticeable without harming performance.",
+      "target": "frontend",
+      "source": {
+        "messageIds": [
+          "msg-11",
+          "msg-14"
+        ],
+        "quotes": [
+          "proceed with updating the floating roses and hearts in the background",
+          "update and create"
+        ]
+      },
+      "acceptanceCriteria": [
+        "Particle density is increased compared to the current implementation (currently `particleCount = 20`).",
+        "Hearts and roses are generated in a controlled distribution (e.g., roughly 50/50 or configurable), not purely random selection that could result in near-zero of one type.",
+        "Animation remains smooth on typical screen sizes without obvious frame drops, and still uses a single fixed full-screen canvas."
+      ]
+    }
+  ],
+  "constraints": [
+    "Do not modify any files under `frontend/src/components/ui` (read-only).",
+    "Do not modify files listed in `frontend.immutablePaths` in SYSTEM_CONTEXT.",
+    "Backend must remain a single Motoko actor; no new backend is required for this change."
+  ],
+  "nonGoals": [
+    "Do not change the existing hero text, button labels, overlay message text, or footer quote.",
+    "Do not add background music, authentication flows, or new pages/routes.",
+    "Do not introduce new backend methods or persistence for this update."
+  ],
+  "imageRequirements": {
+    "required": [],
+    "edits": []
+  }
+}

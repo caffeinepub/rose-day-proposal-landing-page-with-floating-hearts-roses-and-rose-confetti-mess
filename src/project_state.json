@@ -1,0 +1,102 @@
+{
+  "schemaVersion": "1.0.0",
+  "projectStateVersion": 5,
+  "summary": "Rose Day proposal website with soft light red background, floating heart/rose animations, centered headings, two gradient buttons triggering rose-confetti and full-screen message overlays, plus a romantic quote footer.",
+  "architectural_notes": [
+    "Implement full-screen modal/overlay for message display with close/dismiss handling.",
+    "Use a lightweight particle/confetti effect themed as roses, triggered by button clicks.",
+    "Ensure background floating animation includes both roses and hearts simultaneously (layered behind hero content; non-interactive so it doesn't block clicks/scroll)."
+  ],
+  "known_issues": [],
+  "isFixRequest": false,
+  "existing_features": [
+    {
+      "id": "feature-create-a-single-page-rose-day-proposal-landing-page-with-a-soft-light-red-background-and-centered-hero-content-the-hero-must-include-a-large-bold-heading-exactly-shaheena-with-a-deep-pink-red-text-color-and-a-sub-heading-below-it-exactly-click-to-see-why-you-re-my-forever",
+      "title": "Create a single-page Rose Day proposal landing page with a soft, light red background and centered hero content. The hero must include a large, bold heading exactly: \"♥ Shaheena ♥\" with a deep pink/red text color, and a sub-heading below it exactly: \"Click to See Why You’re My Forever 💖\".",
+      "reqIds": [
+        "REQ-1"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-add-slow-continuously-floating-animated-hearts-and-roses-in-the-background-subtle-motion-layered-behind-the-hero-text-buttons-the-animation-must-not-block-clicking-or-scrolling",
+      "title": "Add slow, continuously floating animated hearts and roses in the background (subtle motion, layered behind the hero text/buttons). The animation must not block clicking or scrolling.",
+      "reqIds": [
+        "REQ-2"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-add-two-large-call-to-action-buttons-below-the-hero-text-styled-with-vibrant-pink-gradient-backgrounds-1-open-and-2-wifey",
+      "title": "Add two large call-to-action buttons below the hero text, styled with vibrant pink gradient backgrounds: (1) \"🌹 Open 🌹\" and (2) \"Wifey 🌹\".",
+      "reqIds": [
+        "REQ-3"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-when-the-user-clicks-open-trigger-a-full-screen-confetti-explosion-themed-as-roses-and-show-a-full-screen-overlay-containing-the-following-exact-message-preserve-line-breaks-happy-rose-day-jaana-nyour-beauty-outshines-every-flower-ever-created-and-no-fragrance-in-the-world-compares-to-the-scent-that-belongs-only-to-you-your-body-fragrance-is-more-precious-to-me-than-the-rarest-roses-in-the-world-it-s-not-just-a-scent-it-s-comfort-it-s-home-it-s-the-feeling-i-want-to-carry-with-me-forever-the-overlay-must-include-a-clear-way-to-dismiss-close-it",
+      "title": "When the user clicks \"🌹 Open 🌹\", trigger a full-screen confetti explosion themed as roses and show a full-screen overlay containing the following exact message (preserve line breaks): \"🌹 Happy Rose Day, Jaana 🌹\\nYour beauty outshines every flower ever created, and no fragrance in the world compares to the scent that belongs only to you. Your body fragrance is more precious to me than the rarest roses in the world. It’s not just a scent, it’s comfort, it’s home, it’s the feeling I want to carry with me forever.\" The overlay must include a clear way to dismiss/close it.",
+      "reqIds": [
+        "REQ-4"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-when-the-user-clicks-wifey-trigger-a-full-screen-confetti-explosion-themed-as-roses-and-show-a-full-screen-overlay-containing-the-following-exact-message-preserve-line-breaks-you-mean-everything-to-me-n-nyour-fragrance-it-calms-my-soul-n-nyour-smile-it-fixes-everything-n-nyour-voice-my-comfort-sound-n-nyour-heart-pure-kind-loyal-and-beautiful-n-nyour-presence-my-home-the-overlay-must-include-a-clear-way-to-dismiss-close-it",
+      "title": "When the user clicks \"Wifey 🌹\", trigger a full-screen confetti explosion themed as roses and show a full-screen overlay containing the following exact message (preserve line breaks): \"You Mean Everything to Me 👩‍❤️‍💋‍👨\\n\\nYour Fragrance — it calms my Soul 💕\\n\\nYour smile — it fixes everything 😘\\n\\nYour voice — my comfort sound 💕🤞🏻\\n\\nYour heart — pure, kind, loyal, and beautiful 💖💗😙🧿\\n\\nYour presence — my home 💞\" The overlay must include a clear way to dismiss/close it.",
+      "reqIds": [
+        "REQ-5"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-add-a-bottom-quote-on-the-page-in-a-stylish-font-exactly-every-moment-with-you-feels-like-a-dream-come-true",
+      "title": "Add a bottom quote on the page in a stylish font, exactly: \"Every moment with you feels like a dream come true 🌹\".",
+      "reqIds": [
+        "REQ-6"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-update-the-floating-background-animation-so-that-both-roses-and-hearts-are-always-present-concurrently-in-the-background-not-just-randomly-one-or-the-other-while-keeping-the-effect-subtle-and-behind-all-hero-content",
+      "title": "Update the floating background animation so that both roses and hearts are always present concurrently in the background (not just randomly one or the other), while keeping the effect subtle and behind all hero content.",
+      "reqIds": [
+        "REQ-7"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-expose-and-apply-simple-tuning-controls-for-the-background-particles-e-g-total-count-and-per-type-distribution-and-increase-density-moderately-so-the-updated-roses-hearts-background-is-clearly-noticeable-without-harming-performance",
+      "title": "Expose and apply simple tuning controls for the background particles (e.g., total count and per-type distribution) and increase density moderately so the updated roses+hearts background is clearly noticeable without harming performance.",
+      "reqIds": [
+        "REQ-8"
+      ],
+      "version": 1
+    }
+  ],
+  "new_feature_requests": [
+    {
+      "id": "AR-1",
+      "summary": "Create Rose Day proposal landing page UI: soft light red background, centered heading '♥ Shaheena ♥' (deep pink/red), sub-heading 'Click to See Why You’re My Forever 💖', and bottom quote in a stylish font.",
+      "reqIds": [],
+      "status": "pending"
+    },
+    {
+      "id": "AR-2",
+      "summary": "Add slow floating animated hearts and roses on the background.",
+      "reqIds": [],
+      "status": "pending"
+    },
+    {
+      "id": "AR-3",
+      "summary": "Add two large gradient buttons ('🌹 Open 🌹' and 'Wifey 🌹') that on click trigger full-screen rose confetti and display the respective full-screen romantic message overlays.",
+      "reqIds": [],
+      "status": "pending"
+    }
+  ],
+  "gameProjectType": "none",
+  "projectName": "Rose Day proposal landing page with floating hearts/roses and rose-confetti message overlays",
+  "clarification_mode": "instant",
+  "clarification_rounds": 0
+}

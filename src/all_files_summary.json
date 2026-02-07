@@ -1,0 +1,18 @@
+{
+  "backend/main.mo": "Empty Motoko actor canister with no methods.",
+  "feature_evidence.json": "Feature evidence report mapping background animation and tuning features to affected frontend files and components.",
+  "frontend-file-summaries.txt": "Prewritten summaries describing the purpose of each frontend file including UI components, hooks, and styles.",
+  "frontend/index.css": "Tailwind CSS base file defining OKLCH color variables and theme values for light and dark modes.",
+  "frontend/index.html": "Basic HTML entry point mounting the React app and loading main.tsx.",
+  "frontend/src/App.tsx": "Main React app rendering the hero section, buttons, floating background, confetti, and message overlays.",
+  "frontend/src/components/FloatingHeartsRosesBackground.tsx": "Canvas animation component that renders floating hearts and roses using particle motion and resize-aware drawing.",
+  "frontend/src/components/FullScreenMessageOverlay.tsx": "Fullscreen modal overlay showing a message with scroll lock, escape handling, and a close button.",
+  "frontend/src/components/RoseConfetti.tsx": "Canvas-based falling rose‑petal confetti effect triggered on button click.",
+  "frontend/src/hooks/useActor.ts": "React hook creating and caching a backend actor tied to Internet Identity, refreshing queries on identity changes.",
+  "frontend/src/hooks/useInternetIdentity.ts": "React provider and hook managing Internet Identity authentication, login flow, stored identities, and context access.",
+  "frontend/src/hooks/useQueries.ts": "Empty placeholder module exporting nothing.",
+  "frontend/src/index.css": "Tailwind base/styles plus custom CSS variables, light/dark themes, and component classes for gradients, typography, and UI effects.",
+  "frontend/src/main.tsx": "React entrypoint configuring React Query and InternetIdentityProvider before rendering App.",
+  "frontend/tailwind.config.js": "Tailwind configuration extending colors, radius, animations, and loading plugins for typography, container queries, and animations.",
+  "project_state.json": "Project metadata describing features, UI behavior, and architectural notes for the Rose Day proposal site."
+}

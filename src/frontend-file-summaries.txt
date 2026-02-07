@@ -1,0 +1,8 @@
+{
+  "frontend/src/App.tsx": "Main application component rendering the Rose Day proposal landing page with hero text, two CTA buttons, floating background animations (25 hearts + 25 roses), confetti effects, and full-screen message overlays.",
+  "frontend/src/components/FloatingHeartsRosesBackground.tsx": "Canvas-based background component that deterministically renders both floating hearts and roses concurrently with configurable counts (default 25 each), ensuring both particle types are always visible with proper animation cleanup and correct TypeScript ref initialization.",
+  "frontend/src/components/FullScreenMessageOverlay.tsx": "Full-screen modal overlay component that displays romantic messages with a close button and keyboard escape support.",
+  "frontend/src/components/RoseConfetti.tsx": "Canvas-based confetti effect component that creates a burst of falling rose petals with physics-based animation.",
+  "frontend/src/index.css": "Global styles defining the soft light-red background gradient, hero heading styles, button gradients, quote typography, and overlay animations using OKLCH color system.",
+  "frontend/src/hooks/useQueries.ts": "Empty placeholder file as no backend queries are needed for this purely frontend application."
+}

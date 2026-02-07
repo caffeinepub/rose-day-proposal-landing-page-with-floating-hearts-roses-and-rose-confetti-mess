@@ -1,2 +1,3 @@
-# rose-day-proposal-landing-page-with-floating-hearts-roses-and-rose-confetti-mess
-Exported from Caffeine project: Rose Day proposal landing page with floating hearts/roses and rose-confetti message overlays
+## 
+
+To run app build and run docker image: `docker build -t app . docker run -it --network host app`

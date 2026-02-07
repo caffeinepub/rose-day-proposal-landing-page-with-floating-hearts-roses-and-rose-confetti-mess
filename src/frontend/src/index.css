@@ -1,0 +1,140 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+    :root {
+        --radius: 0.625rem;
+        --background: 0.95 0.08 15;
+        --foreground: 0.25 0.15 350;
+        --card: 1 0 0;
+        --card-foreground: 0.145 0 0;
+        --popover: 1 0 0;
+        --popover-foreground: 0.145 0 0;
+        --primary: 0.55 0.25 345;
+        --primary-foreground: 0.985 0 0;
+        --secondary: 0.97 0.05 15;
+        --secondary-foreground: 0.205 0 0;
+        --muted: 0.97 0 0;
+        --muted-foreground: 0.556 0 0;
+        --accent: 0.97 0 0;
+        --accent-foreground: 0.205 0 0;
+        --destructive: 0.577 0.245 27.325;
+        --destructive-foreground: 0.985 0 0;
+        --border: 0.922 0 0;
+        --input: 0.922 0 0;
+        --ring: 0.708 0 0;
+        --chart-1: 0.646 0.222 41.116;
+        --chart-2: 0.6 0.118 184.704;
+        --chart-3: 0.398 0.07 227.392;
+        --chart-4: 0.828 0.189 84.429;
+        --chart-5: 0.769 0.188 70.08;
+        --sidebar: 0.985 0 0;
+        --sidebar-foreground: 0.145 0 0;
+        --sidebar-primary: 0.205 0 0;
+        --sidebar-primary-foreground: 0.985 0 0;
+        --sidebar-accent: 0.97 0 0;
+        --sidebar-accent-foreground: 0.205 0 0;
+        --sidebar-border: 0.922 0 0;
+        --sidebar-ring: 0.708 0 0;
+    }
+
+    .dark {
+        --background: 0.145 0 0;
+        --foreground: 0.985 0 0;
+        --card: 0.205 0 0;
+        --card-foreground: 0.985 0 0;
+        --popover: 0.269 0 0;
+        --popover-foreground: 0.985 0 0;
+        --primary: 0.922 0 0;
+        --primary-foreground: 0.205 0 0;
+        --secondary: 0.269 0 0;
+        --secondary-foreground: 0.985 0 0;
+        --muted: 0.269 0 0;
+        --muted-foreground: 0.708 0 0;
+        --accent: 0.371 0 0;
+        --accent-foreground: 0.985 0 0;
+        --destructive: 0.704 0.191 22.216;
+        --destructive-foreground: 0.205 0 0;
+        --border: 1 0 0 / 10%;
+        --input: 1 0 0 / 15%;
+        --ring: 0.556 0 0;
+        --chart-1: 0.488 0.243 264.376;
+        --chart-2: 0.696 0.17 162.48;
+        --chart-3: 0.769 0.188 70.08;
+        --chart-4: 0.627 0.265 303.9;
+        --chart-5: 0.645 0.246 16.439;
+        --sidebar: 0.205 0 0;
+        --sidebar-foreground: 0.985 0 0;
+        --sidebar-primary: 0.488 0.243 264.376;
+        --sidebar-primary-foreground: 0.985 0 0;
+        --sidebar-accent: 0.269 0 0;
+        --sidebar-accent-foreground: 0.985 0 0;
+        --sidebar-border: 1 0 0 / 10%;
+        --sidebar-ring: 0.439 0 0;
+    }
+
+    * {
+        @apply border-border;
+    }
+    body {
+        @apply bg-background text-foreground;
+        background: linear-gradient(135deg, oklch(0.95 0.08 15) 0%, oklch(0.92 0.1 10) 100%);
+        min-height: 100vh;
+    }
+}
+
+@layer components {
+    .hero-heading {
+        color: oklch(0.45 0.25 350);
+        text-shadow: 2px 2px 8px rgba(255, 107, 157, 0.3);
+        font-family: 'Georgia', 'Times New Roman', serif;
+        letter-spacing: 0.02em;
+    }
+
+    .sub-heading {
+        color: oklch(0.5 0.2 345);
+        font-family: 'Georgia', 'Times New Roman', serif;
+    }
+
+    .button-gradient {
+        background: linear-gradient(135deg, oklch(0.65 0.25 345) 0%, oklch(0.55 0.28 350) 50%, oklch(0.6 0.26 340) 100%);
+        border-radius: 9999px;
+        box-shadow: 0 8px 24px rgba(255, 23, 68, 0.4);
+        border: none;
+        cursor: pointer;
+    }
+
+    .button-gradient:hover {
+        box-shadow: 0 12px 32px rgba(255, 23, 68, 0.5);
+    }
+
+    .bottom-quote {
+        color: oklch(0.4 0.2 350);
+        font-family: 'Brush Script MT', 'Lucida Handwriting', cursive;
+        letter-spacing: 0.03em;
+        text-shadow: 1px 1px 4px rgba(255, 107, 157, 0.2);
+    }
+
+    .overlay-content {
+        background: linear-gradient(135deg, oklch(0.65 0.25 345) 0%, oklch(0.55 0.28 350) 100%);
+        animation: slideIn 0.3s ease-out;
+    }
+
+    .message-text {
+        color: oklch(0.98 0.02 0);
+        text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.3);
+        font-family: 'Georgia', 'Times New Roman', serif;
+    }
+
+    @keyframes slideIn {
+        from {
+            opacity: 0;
+            transform: scale(0.9) translateY(20px);
+        }
+        to {
+            opacity: 1;
+            transform: scale(1) translateY(0);
+        }
+    }
+}

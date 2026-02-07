@@ -1,0 +1,44 @@
+{
+  "kind": "implementation_plan",
+  "version": "1.0",
+  "title": "Floating roses + hearts concurrent background with tunable density",
+  "requirements": [
+    {
+      "id": "REQ-7",
+      "summary": "Ensure roses and hearts are always present concurrently in the subtle, non-interactive background layer behind hero content.",
+      "acceptanceCriteria": [
+        "On load, the background includes visible heart particles and visible rose particles at the same time.",
+        "The animation remains layered behind the page content (hero text, buttons, overlays) and does not obscure readability.",
+        "The animation remains non-interactive (does not block clicking or scrolling)."
+      ],
+      "file_operations": [
+        {
+          "path": "frontend/src/components/FloatingHeartsRosesBackground.tsx",
+          "operation": "modify",
+          "description": "Change particle initialization to deterministically create both heart and rose particles concurrently (based on a fixed per-type count rather than per-particle random type) and keep rendering subtle. Preserve full-screen fixed canvas layering behind content and keep pointer-events disabled; add robust animation cleanup if needed."
+        }
+      ]
+    },
+    {
+      "id": "REQ-8",
+      "summary": "Add simple tuning controls for particle count and per-type distribution; moderately increase density while keeping a single smooth full-screen canvas.",
+      "acceptanceCriteria": [
+        "Particle density is increased compared to the current implementation (currently `particleCount = 20`).",
+        "Hearts and roses are generated in a controlled distribution (e.g., roughly 50/50 or configurable), not purely random selection that could result in near-zero of one type.",
+        "Animation remains smooth on typical screen sizes without obvious frame drops, and still uses a single fixed full-screen canvas."
+      ],
+      "file_operations": [
+        {
+          "path": "frontend/src/components/FloatingHeartsRosesBackground.tsx",
+          "operation": "modify",
+          "description": "Introduce a small settings API (e.g., props and/or exported defaults) for tuning total particle count and heart/rose split, and apply these settings to particle generation. Increase default density moderately above 20 while maintaining performance (e.g., cap counts, use devicePixelRatio-aware sizing, avoid per-frame allocations, and ensure a single fixed full-screen canvas)."
+        },
+        {
+          "path": "frontend/src/App.tsx",
+          "operation": "modify",
+          "description": "Pass the desired background particle tuning values into FloatingHeartsRosesBackground (or reference exported defaults) to apply the increased density and controlled heart/rose distribution without adding new pages/routes or changing hero/overlay/footer text."
+        }
+      ]
+    }
+  ]
+}

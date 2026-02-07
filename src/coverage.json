@@ -1,0 +1,52 @@
+{
+  "kind": "coverage_report",
+  "version": "1.0",
+  "generatedAt": "2026-02-07T06:59:35.817Z",
+  "sources": {
+    "buildRequest": true,
+    "implementationPlan": true
+  },
+  "requirements": {
+    "total": 2,
+    "implemented": 2,
+    "items": [
+      {
+        "id": "REQ-7",
+        "summary": "Update the floating background animation so that both roses and hearts are always present concurrently in the background (not just randomly one or the other), while keeping the effect subtle and behind all hero content.",
+        "status": "implemented",
+        "plannedFiles": [
+          "frontend/src/components/FloatingHeartsRosesBackground.tsx"
+        ],
+        "matchedFiles": [
+          "frontend/src/components/FloatingHeartsRosesBackground.tsx"
+        ]
+      },
+      {
+        "id": "REQ-8",
+        "summary": "Expose and apply simple tuning controls for the background particles (e.g., total count and per-type distribution) and increase density moderately so the updated roses+hearts background is clearly noticeable without harming performance.",
+        "status": "implemented",
+        "plannedFiles": [
+          "frontend/src/components/FloatingHeartsRosesBackground.tsx",
+          "frontend/src/App.tsx"
+        ],
+        "matchedFiles": [
+          "frontend/src/components/FloatingHeartsRosesBackground.tsx",
+          "frontend/src/App.tsx"
+        ]
+      }
+    ]
+  },
+  "changedFiles": [
+    "build-request.json",
+    "build-template/README.md",
+    "feature_evidence.json",
+    "frontend-file-summaries.txt",
+    "frontend-implementation-plan.json",
+    "frontend/src/App.tsx",
+    "frontend/src/components/FloatingHeartsRosesBackground.tsx",
+    "project_state.json",
+    "scratch/component-selection.json",
+    "spec.md",
+    "spec_vs_diff_report.json"
+  ]
+}

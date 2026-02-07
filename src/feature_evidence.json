@@ -1,0 +1,42 @@
+{
+  "kind": "feature_evidence_report",
+  "features": [
+    {
+      "featureId": "feature-update-the-floating-background-animation-so-that-both-roses-and-hearts-are-always-present-concurrently-in-the-background-not-just-randomly-one-or-the-other-while-keeping-the-effect-subtle-and-behind-all-hero-content",
+      "featureTitle": "Update the floating background animation so that both roses and hearts are always present concurrently in the background (not just randomly one or the other), while keeping the effect subtle and behind all hero content.",
+      "files": [
+        "frontend/src/components/FloatingHeartsRosesBackground.tsx"
+      ],
+      "components": [
+        "core-infrastructure@1.0.2",
+        "shadcn-ui@1.0.0",
+        "build-template-react@1.0.0",
+        "initial-app@1.0.0",
+        "github-export-icp-cli@1.0.0"
+      ],
+      "testIds": [
+        "REQ-7"
+      ],
+      "confidence": "high"
+    },
+    {
+      "featureId": "feature-expose-and-apply-simple-tuning-controls-for-the-background-particles-e-g-total-count-and-per-type-distribution-and-increase-density-moderately-so-the-updated-roses-hearts-background-is-clearly-noticeable-without-harming-performance",
+      "featureTitle": "Expose and apply simple tuning controls for the background particles (e.g., total count and per-type distribution) and increase density moderately so the updated roses+hearts background is clearly noticeable without harming performance.",
+      "files": [
+        "frontend/src/App.tsx",
+        "frontend/src/components/FloatingHeartsRosesBackground.tsx"
+      ],
+      "components": [
+        "core-infrastructure@1.0.2",
+        "shadcn-ui@1.0.0",
+        "build-template-react@1.0.0",
+        "initial-app@1.0.0",
+        "github-export-icp-cli@1.0.0"
+      ],
+      "testIds": [
+        "REQ-8"
+      ],
+      "confidence": "high"
+    }
+  ]
+}
